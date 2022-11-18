@@ -42,7 +42,6 @@ const CourseInput = (props) => {
         className={buttonStyle.button}
         href="https://github.com/rubanero14/React-Lessons-Section7-Debugging-React-Apps"
         target="_blank"
-        style={{ marginLeft: "5px" }}
       >
         Source Code
       </a>
