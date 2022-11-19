@@ -1,6 +1,5 @@
-import React from 'react';
-
-import './CourseGoalItem.css';
+import React from "react";
+import styles from "./CourseGoalItem.module.css";
 
 const CourseGoalItem = (props) => {
   const deleteHandler = () => {
@@ -8,7 +7,10 @@ const CourseGoalItem = (props) => {
   };
 
   return (
-    <li className="goal-item" onClick={deleteHandler}>
+    <li
+      className={`${styles["goal-item"]} ${styles["list-spacing"]}`}
+      onClick={deleteHandler}
+    >
       {props.children}
     </li>
   );

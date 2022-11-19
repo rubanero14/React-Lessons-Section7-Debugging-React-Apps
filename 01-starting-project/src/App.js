@@ -28,7 +28,12 @@ const App = () => {
   };
 
   let content = (
-    <p style={{ textAlign: "center" }}>No goals found. Maybe add one?</p>
+    <p
+      className="text-gradient"
+      style={{ textAlign: "center", fontWeight: "bold" }}
+    >
+      No goals found. Maybe add one?
+    </p>
   );
 
   if (courseGoals.length > 0) {
@@ -39,6 +44,12 @@ const App = () => {
 
   return (
     <div>
+      <h1
+        style={{ fontWeight: "bold", fontSize: "50px" }}
+        className="text-gradient"
+      >
+        Goals App
+      </h1>
       <section id="goal-form">
         <CourseInput onAddGoal={addGoalHandler} />
       </section>
